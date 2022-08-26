@@ -1,0 +1,55 @@
+body{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    animation: rotat  ease-out 5s infinite ;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 22%;
+}
+#SideOne{
+    display: flex;
+    flex-basis: 29%;
+}
+input{
+    padding: 3%;
+}
+#enter{
+    margin: 2%;
+    padding: 2%;
+}
+ul{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+}
+li{
+    background: linear-gradient(134deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 84%, rgba(0,212,255,1) 100%);
+    color: #fff;
+    list-style-type: none;
+    border: solid black 4px;
+    border-image: linear-gradient(45deg, turquoise, greenyellow) 1;
+    padding: 4%;
+    margin: 2%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.done{
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(47,181,29,1) 43%, rgba(200,148,37,1) 100%);
+}
+@keyframes rotat {
+from{background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(42,42,150,1) 33%, rgba(0,212,255,1) 100%);}
+to {background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 40%, rgba(0,212,255,1) 100%);}
+}
